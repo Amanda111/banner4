@@ -1,0 +1,115 @@
+body {
+  margin: 0px; 
+  overflow: hidden;
+}
+
+#banner{
+  width: 100%;
+  height: 400px;
+  position: relative; 
+}
+
+img {
+  width: 100%;
+  height: 400px; 
+  position: absolute;
+}
+
+
+.right_show{
+    -webkit-animation: right_show 1s ease-in-out;
+    -o-animation: right_show 1s ease-in-out;
+    animation: right_show 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+  }
+   @keyframes right_show
+    {
+      from{left:-100%;}
+      to{left: 0px;}
+    }
+    @-webkit-keyframes right_show/* Safari and Chrome */
+    {
+      from{left: -100%;}
+      to{left: 0px;}
+    }
+  .right_active{
+    -webkit-animation: right_active 1s ease-in-out;
+    -o-animation: right_active 1s ease-in-out;
+    animation: right_active 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+  }
+   @keyframes right_active
+    {
+      from{left: 0px;}
+      to{left: 100%;}
+    }
+    @-webkit-keyframes right_active /* Safari and Chrome */
+    {
+      from{left: 0px;}
+      to{left: 100%;}
+    }
+  .left_show{
+    -webkit-animation: left_show 1s ease-in-out;
+    -o-animation: left_show 1s ease-in-out;
+    animation: left_show 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+      }
+   @keyframes left_show
+    {
+      from{left: 100%;}
+      to{left: 0px;}
+    }
+    @-webkit-keyframes left_show /* Safari and Chrome */
+    {
+      from{left: 100%;}
+      to{left: 0px;}
+    }
+  .left_active{  
+    -webkit-animation: left_active 1s ease-in-out;
+    -o-animation: left_active 1s ease-in-out;
+    animation: left_active 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+      }
+   @keyframes left_active
+    {
+      from{left: 0px;}
+      to{left: -100%;}
+    }
+    @-webkit-keyframes left_active /* Safari and Chrome */
+    {
+      from{left: 0px;}
+      to{left: -100%;}
+    }
+.button {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bolder;
+  color: #A9D5D6;
+  transform: scale(1, 2.5);
+  top: 200px;
+  cursor: pointer; 
+}
+
+#left-button {
+  left: 30px; 
+}
+
+#right-button {
+  right: 30px; 
+}
+
